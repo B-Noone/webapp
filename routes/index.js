@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   const data = {
     title: "Azure App Service",
-    message: process.env.message || "Dev Environment"
+    message: process.env.MESSAGE || "Dev Environment"
   }
   res.render('index', data);
 });
